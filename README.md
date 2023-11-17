@@ -13,7 +13,9 @@ The data features 1534 rows and 55 columns. That means that their were 1,534 pow
 ---
 
 ## Cleaning and EDA
+A graph!
 
+<iframe src="assets/outage-duration-hist4.png" width=800 height=600 frameBorder=0></iframe> 
 ---
 
 ## Assessment of Missingness
