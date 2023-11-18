@@ -14,6 +14,7 @@ In this project, we want to specifically examine **what attributes are correlate
 The dataset we will be using provides information on the major power outages that occured in the U.S. from January 2000 to July 2016. Stats-wise, our raw dataset contains 1535 rows, which represent the nunber of major power outage reports, and 56 columns, which represent the number of power outage properties that were recorded. 
 
 The following columns will be revelant to our dataset (descriptions were taken from [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918307182#t0005)): 
+
 | Column Names                       | Description                                                        |
 | ---------------------------------- | ------------------------------------------------------------------ |
 | `YEAR`                             | Indicates the year when the outage event occurred                  |
@@ -51,6 +52,8 @@ Some of the outages were missing the time in which they started and ended. Due t
 
 ### Exploratory Data Analysis
 
+---
+
 ### Univariate Analysis
 
 For the univariate analysis, we decided to look at the columns that were relevent to you question. In this graph, we see the total number of outages based on their duration. 
@@ -73,7 +76,7 @@ For the bivariate Analysis, we looked once more at the outage duration but in re
 Here's what a Markdown table looks like. Note that the code for this table was generated _automatically_ from a DataFrame, using
 
 ```py
-print(pd.DataFrame(df.groupby('NERC.REGION')['YEAR'].count()).to_markdown(index=False))
+pd.DataFrame(df.groupby('NERC.REGION')['YEAR'].count()).to_markdown(index=False)
 ```
 
 
