@@ -14,9 +14,9 @@ In this project, we explored a data set that reports "major outages witnessed by
 
 The dataset we will be using provides information on the major power outages that occured in the U.S. from January 2000 to July 2016. Stats-wise, our raw dataset contains 1535 rows, which represent the nunber of major power outage reports, and 56 columns, which represent the number of power outage properties that were recorded. 
 
-The following columns will be revelant to our dataset: [^1]
+The following columns will be revelant to our dataset:
 
-[^1]: note: descriptions were taken from [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918307182#t0005)
+Note: descriptions were taken from [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918307182#t0005)
 
 | Column Names                       | Description                                                        |
 | ---------------------------------- | ------------------------------------------------------------------ |
@@ -89,8 +89,9 @@ Below is the head of the DataFrame of the 5 most relevant columns:
 
 ### Univariate Analysis
 
-For the univariate analysis, we decided to look at the columns that were relevent to our research question. In this graph, we see the total number of outages based on their duration. [^2]
-[^2]: Note: each grouping of the histogram represents a 12 hour period.
+For the univariate analysis, we decided to look at the columns that were relevent to our research question. In this graph, we see the total number of outages based on their duration.
+
+Note: each grouping of the histogram represents a 12 hour period.
 
 <iframe src="assets/outage-duration-hist4.png" width=800 height=600 frameBorder=0></iframe>
 
@@ -100,8 +101,9 @@ We also looked at whether in different months we see outage of different duratio
 
 ### Bivariate Analysis
 
-For the bivariate analysis, we looked once more at the outage duration but in relation to their location in the U.S. Below is a map that shows each of the states color coded depending on the average duration. [^3]
-[^3]: Note that the bins are not even to better represent the data.
+For the bivariate analysis, we looked once more at the outage duration but in relation to their location in the U.S. Below is a map that shows each of the states color coded depending on the average duration.
+
+Note that the bins are not even to better represent the data.
 
 <iframe src="assets/map.html" width=800 height=600 frameBorder=0></iframe>
 
