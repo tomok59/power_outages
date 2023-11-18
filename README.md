@@ -109,6 +109,8 @@ Note that the bins are not even to better represent the data.
 
 ### Interesting Aggregates
 
+The following aggregate has `CAUSE.CATEGORY` as the index and `CAUSE.CATEGORY.DETAIL` as the columns. `DETAIL_MISSING = False` represents how many NaNs were proportionality not missing in each `CAUSE.CATEGORY`. `DETAIL_MISSING = False` represents how many NaNs were proportionality missing in each `CAUSE.CATEGORY`. Each column is a separate distribution that adds to 1. This aggregate is significant in investigating whether or not the missingness in`CAUSE.CATEGORY.DETAIL` depends on `CAUSE.CATEGORY`, which will be explored in the later section assessing the missingness in the data.
+
 | CAUSE.CATEGORY                |   DETAIL_MISSING = False |   DETAIL_MISSING = True |
 |:------------------------------|-------------------------:|------------------------:|
 | equipment failure             |                0.0418288 |               0.0267857 |
