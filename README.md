@@ -150,7 +150,7 @@ After analyzing the table, the column we decided to base our missingness analysi
 Next, we will use permutation tests to analyze the dependency of the missingness in the `CAUSE.CATEGORY.DETAIL` column against the following columns: `CAUSE.CATEGORY` and `POPULATION` 
 
 
-> `CAUSE.CATEGORY.DETAIL` and `CAUSE.CATEGORY` (MAR)
+#### `CAUSE.CATEGORY.DETAIL` and `CAUSE.CATEGORY` (MAR)
 
 Null hypothesis: The missingness in `CAUSE.CATEGORY.DETAIL` does not depend on `CAUSE.CATEGORY` 
 
@@ -170,7 +170,7 @@ Next, we continue to conduct a permutation test using the Total Variation Distan
 
 After 500 permutations of shuffling the `CAUSE.CATEGORY` column and simulating the TVD results, the p-value comes to be 0.0. Our p-value of 0.0 is less than our significance level of 0.05, therefore **we reject the null hypthesis stating that the missingness in `CAUSE.CATEGORY.DETAIL` does not depend on `CAUSE.CATEGORY`**, thus making it **MAR**. 
 
-> `CAUSE.CATEGORY.DETAIL` and `IND.PRICE` (MCAR)
+#### `CAUSE.CATEGORY.DETAIL` and `IND.PRICE` (MCAR)
 
 Null hypothesis: The missingness in `CAUSE.CATEGORY.DETAIL` does not depend on `IND.PRICE` 
 
