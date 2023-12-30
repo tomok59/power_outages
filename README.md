@@ -222,9 +222,9 @@ Alternative Hypothesis (HA): There is a correlation between the two variables.
 To test for this, we used the Pearson correlation coefficient to measure our hypothesis. This test the linear relationsip between two numerical variables. We set the alpha to equal 0.01
 
 ```py
-observed_correlation, _ = scipy.stats.pearsonr(df['OUTAGE.DURATION'], df['SQUARE.MILES.AFFECTED'])
+p_value = (np.abs(permuted_correlations) >= np.abs(observed_correlation)).mean()
 ```
-This returned a p-value of 0.2419610934765804
+This returned a p-value of 1e-05
 
 ### Permutation Test
 
